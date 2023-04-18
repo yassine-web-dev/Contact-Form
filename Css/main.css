@@ -1,0 +1,178 @@
+/* Start Global Rules */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Edit Input Cursor */
+input,
+textarea {
+    caret-color: #FFF;
+    color: #FFF;
+    font-size: 24px;
+    font-family: Bebas Neue;
+}
+  
+
+/* End Global Rules */
+
+/* Start Framework */
+
+.container {
+    width: 782px;
+    margin: auto;
+}
+
+.bebas-font {
+    font-family: Bebas Neue;
+}
+
+.float-l {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url('../Fonts/BebasNeue-Regular.ttf');
+}
+
+/* End Framework */
+
+/* Start Contact Form */
+
+.contact-form {
+    background-color: #68889d;
+    min-height: 100vh;
+}
+
+.contact-form .header {
+    padding-top: 30px;
+}
+
+.contact-form h1 {
+    margin: 0;
+    color: #627888;
+    width: 50%;
+    font-size: 70px;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    -o-text-shadow: 1px 1px 1px #000;
+    -ms-text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.contact-form .first-span {
+    font-size: 30px;
+    width: 50%;
+    margin-top: 25px;
+    color: #412522;
+}
+
+.contact-form hr {
+    margin: 0;
+}
+
+.contact-form hr:first-of-type,
+.contact-form hr:nth-of-type(3) {
+    color: #688396;
+    margin-top: 15px;
+}
+
+.contact-form hr:nth-of-type(2),
+.contact-form hr:last-of-type {
+    color: #99b0c0;
+}
+
+.contact-form form {
+    margin: 0;
+    position: relative;
+}
+
+.contact-form form input {
+    display: block;
+    background: #607584;
+    border: 1px solid #688396;
+    width: 777px;
+    height: 50px;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 0 25px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.contact-form form input:first-of-type {
+    margin-top: 35px;
+}
+
+.contact-form form textarea {
+    outline: none;
+    width: 777px;
+    height: 260px;
+    background: #607584;
+    border: 1px solid #688396;
+    padding: 10px 181px 10px 25px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.contact-form form #myspan {
+    position: absolute;
+    top: 206px;
+    right: 24px;
+    font-size: 25px;
+    color: #412522;
+}
+
+.contact-form form .form-footer {
+    padding: 20px 0 0;
+}
+
+.contact-form form .sp-span {
+    width: 69%;
+    font-size: 30px;
+    margin-top: 25px;
+    color: #412522;
+    margin: 0;
+    padding: 30px 0 30px 45px;
+}
+
+.contact-form form button {
+    font-size: 30px;
+    background-color: #412522;
+    color: #FFF;
+    border: 1px solid #412522;
+    width: 237px;
+    padding: 17px 0px;
+    margin-top: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+}
+
+
+
+
+/* End Contact Form */
