@@ -69,11 +69,10 @@ myTextArea.oninput = function () {
 
 }
 
-// Clear Textarea Onload
 window.onload = function () {
 
 	'use strict';
 
-	myTextArea.value = '';
+	mySpan.textContent = maxLength - myTextArea.value.length;
 
 }
