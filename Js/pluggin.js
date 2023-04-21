@@ -69,11 +69,17 @@ myTextArea.oninput = function () {
 
 }
 
-// Clear Textarea Onload
+
 window.onload = function () {
 
 	'use strict';
 
+    // Clear Textarea Onload
 	myTextArea.value = '';
+
+    // Clear Input Onload
+    for (var i = 0; i < myInput.length; i++) {
+        myInput[i].value = '';
+    }
 
 }
