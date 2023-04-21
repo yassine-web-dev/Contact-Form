@@ -37,9 +37,6 @@ myTextArea.onfocus = function () {
 
     'use strict';
 
-    // Make Backup Placeholder
-	myTextArea.setAttribute('data-type', myTextArea.getAttribute('placeholder'));
-
     this.placeholder = '';
 
 }
@@ -48,10 +45,7 @@ myTextArea.onblur = function () {
 
     'use strict';
 
-    // Use Backup Placeholder
-	myTextArea.setAttribute('placeholder', myTextArea.getAttribute('data-type'));
-
-	this.setAttribute('data-type', '');
+    this.placeholder = 'MESSAGE';
 
 }
 
