@@ -56,33 +56,23 @@ myTextArea.onblur = function () {
 }
 
 /* Calculate Textarea Characters */
-
 var mySpan = document.getElementById('myspan'),
 	myTextArea = document.getElementById('message'),
-	desirableNum = 100;
+	maxLength = myTextArea.getAttribute('maxlength');
 
-myTextArea.onkeyup = function () {
+
+myTextArea.oninput = function () {
 
 	'use strict';
 
-	mySpan.textContent = desirableNum - this.value.length;
+	mySpan.textContent = maxLength - this.value.length;
 
 }
-
-myTextArea.addEventListener("input", function() {
-
-  if (myTextArea.value.length > desirableNum) {
-
-    myTextArea.value = myTextArea.value.substring(0, desirableNum);
-
-  }
-  
-});
 
 window.onload = function () {
 
 	'use strict';
 
-	mySpan.textContent = desirableNum - myTextArea.value.length;
+	mySpan.textContent = maxLength - myTextArea.value.length;
 
 }
