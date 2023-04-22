@@ -83,3 +83,22 @@ window.onload = function () {
     }
 
 }
+
+/* Capitalize Words Function */
+function capitalizeWords(str) {
+
+	return str.replace(/[a-z]/g, function(l) {
+
+		 return l.toUpperCase() 
+
+		});
+	
+}
+
+var cSpan = document.getElementById('cspan'),
+    str   = cSpan.textContent;
+
+var capitalizedStr = capitalizeWords(str);
+
+// Capitalize Span Content
+cSpan.textContent = capitalizedStr;
